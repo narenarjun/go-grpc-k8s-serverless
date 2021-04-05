@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1
+kind: Service 
+metadata:
+  name: grpc-blog-server
+spec:
+  template:
+    spec:
+      containers:
+        - image: quay.io/narendev/blogserver:v1
+          ports:
+            - name: h2c
+              containerPort: 50051
+          env:
+            - name: MONGO_DB_URI
+              value: "mongodb://blog-mongo-srv:27017/"
