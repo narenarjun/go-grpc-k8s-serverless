@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: grpc-blogserver
+  labels:
+    account: blogserver
+    type: ksvc
