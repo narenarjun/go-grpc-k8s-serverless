@@ -1,8 +1,8 @@
-# Golang GRPC blog server on kubernetes made serverless with Knative 
+# <div align="center"> 🌟🌟🌟🌟 Golang GRPC blog server on deployed kubernetes made serverless with Knative 🌟🌟🌟🌟</div>
 
 
 
-## Container Image
+## ✨✨ Container Image:
 
 The app is containerized and hosted in the [Quay Container registry](https://quay.io/repository/narendev/blogserver?tab=tags).   
 

@@ -22,7 +22,7 @@ spec:
         image: mongo
         imagePullPolicy: Always
         volumeMounts:
-        - name: www
+        - name: blog-mongo-presistent
           mountPath: /data/db
   volumeClaimTemplates:
   - metadata:
