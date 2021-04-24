@@ -7,6 +7,11 @@ The kubernetes deployment files are in the [`./kubernetes/server-deployment`](".
 To create a client for this server, we can use this proto file : [`./blog-server/blogpb/blog.proto`]("./blog-server/blogpb/blog.proto").
 
 The grpc server is deployed on the [`civo`](civo.com) k3s kubernetes platform. Here is the server url: http://grpc-blog-server.grpc-blog.e20b4706-9ba3-4496-a857-b8b531dd5a38.k8s.civo.com
+
+> ### ✨ Note 📚 :
+> GRPC uses http/2 layer and we need to use grpc specific tools to 
+> query and interact with grpc endpoints. Such a GRPC specific tools are evan ClI (https://github.com/ktr0731/evans), grpcurl (https://github.com/fullstorydev/grpcurl).  
+
 ## ✨✨ Container Image:
 
 The app is containerized and hosted in the [Quay Container registry](https://quay.io/repository/narendev/blogserver?tab=tags).   
