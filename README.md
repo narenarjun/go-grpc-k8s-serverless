@@ -1,6 +1,12 @@
-# <div align="center"> 🌟🌟🌟🌟 Golang GRPC blog server on deployed kubernetes made serverless with Knative 🌟🌟🌟🌟</div>
+# <div align="center"> Golang GRPC blog server on deployed kubernetes made serverless with Knative</div>
 
 
+
+The kubernetes deployment files are in the [`./kubernetes/server-deployment`]("./kubernetes/server-deployment") folder.
+
+To create a client for this server, we can use this proto file : [`./blog-server/blogpb/blog.proto`]("./blog-server/blogpb/blog.proto").
+
+The grpc server is deployed on the [`civo`](civo.com) k3s kubernetes platform. Here is the server url: [grpc-blog-server.grpc-blog.e20b4706-9ba3-4496-a857-b8b531dd5a38.k8s.civo.com]("grpc-blog-server.grpc-blog.e20b4706-9ba3-4496-a857-b8b531dd5a38.k8s.civo.com")
 
 ## ✨✨ Container Image:
 
